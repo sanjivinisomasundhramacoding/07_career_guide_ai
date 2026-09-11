@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ bot_name }}</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="app">
+<section class="hero">
+<span class="badge">AI ASSISTANT</span>
+<h1>{{ bot_name }}</h1>
+<p>Focused AI help for your selected domain.</p>
+</section>
+<section class="chat-card">
+<div id="messages" class="messages">
+<div class="message bot">Hi! I’m {{ bot_name }}. Ask me a question related to my domain.</div>
+</div>
+<form id="chat-form">
+<input id="message-input" type="text" placeholder="Type your question..." autocomplete="off">
+<button type="submit">Send</button>
+</form>
+</section>
+</main>
+<script src="/static/script.js"></script>
+</body>
+</html>
